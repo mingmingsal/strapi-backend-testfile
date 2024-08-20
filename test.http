@@ -1,0 +1,14 @@
+POST http://localhost:1337/api/auth/local
+Content-Type: application/json
+
+{
+    "identifier":"yoshi",
+    "password":"t3stp4ss!"
+}
+
+###
+
+GET http://localhost:1337/api/reviews/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI0MDUzOTc5LCJleHAiOjE3MjY2NDU5Nzl9.m2lJSMygj8hf3vSxeowd7hQvjzSqnU7Uc6UdHk7cN1U 
+###
+GET http://localhost:1337/api/reviews
